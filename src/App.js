@@ -11,7 +11,7 @@ import FAQ from "./Screens/FAQ";
 function App() {
   return (
     <div className="App">
-      <img src={logo} />
+      <img alt="logo" src={logo} />
       <h1>Aatm Nirbhar Bharat</h1>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Link style={{ paddingRight: 12 }} to="/">

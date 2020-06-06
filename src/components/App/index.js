@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "../../logo.svg";
 import "./App.css";
 import { Switch, Route, Link } from "react-router-dom";
-import About from "./Screens/About";
-import Home from "./Screens/Home";
-import Search from "./Screens/Search";
-import AddProduct from "./Screens/AddProduct";
-import FAQ from "./Screens/FAQ";
+import About from "../About";
+import Home from "../Home";
+import Search from "../Search";
+import AddProduct from "../AddProduct";
+import FAQ from "../FAQ";
 
 function App() {
   return (

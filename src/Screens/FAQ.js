@@ -1,13 +1,9 @@
-import React from "react"
+import React from "react";
 
 class FAQ extends React.Component {
-    render(){
-        return(
-            <div>
-                FAQ Code Goes Here.
-            </div>
-        )
-    }
+  render() {
+    return <div>FAQ Code Goes Here.</div>;
+  }
 }
 
-export default FAQ
+export default FAQ;

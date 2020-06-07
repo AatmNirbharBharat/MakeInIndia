@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95d06fb7.chunk.css",
+    "main.js": "/static/js/main.cd841de2.chunk.js",
+    "main.js.map": "/static/js/main.cd841de2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b5d1174b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b5d1174b.js.map",
+    "static/js/2.80800976.chunk.js": "/static/js/2.80800976.chunk.js",
+    "static/js/2.80800976.chunk.js.map": "/static/js/2.80800976.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7ef918b6f46ab61daf5c30e9e229e6bc.js": "/precache-manifest.7ef918b6f46ab61daf5c30e9e229e6bc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.95d06fb7.chunk.css.map": "/static/css/main.95d06fb7.chunk.css.map",
+    "static/js/2.80800976.chunk.js.LICENSE.txt": "/static/js/2.80800976.chunk.js.LICENSE.txt",
+    "static/media/Make_In_India.png": "/static/media/Make_In_India.41d9f969.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5d1174b.js",
+    "static/js/2.80800976.chunk.js",
+    "static/css/main.95d06fb7.chunk.css",
+    "static/js/main.cd841de2.chunk.js"
+  ]
+}

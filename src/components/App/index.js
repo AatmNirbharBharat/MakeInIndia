@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../Make_In_India.png";
 import "./App.css";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import About from "../About";
 import Home from "../Home";
 import Search from "../Search";
@@ -14,21 +14,21 @@ function App() {
       <img alt="logo" src={logo} />
       <h1>Aatm Nirbhar Bharat</h1>
       <div style={{ display: "flex", flexDirection: "row" }}>
-        <Link style={{ paddingRight: 12 }} to="/">
+        <NavLink className="nav-link" to="/" exact>
           Home
-        </Link>
-        <Link style={{ paddingRight: 12 }} to="/search">
+        </NavLink>
+        <NavLink className="nav-link" to="/search">
           Search
-        </Link>
-        <Link style={{ paddingRight: 12 }} to="/add">
+        </NavLink>
+        <NavLink className="nav-link" to="/add">
           Add Product
-        </Link>
-        <Link style={{ paddingRight: 12 }} to="/faq">
+        </NavLink>
+        <NavLink className="nav-link" to="/faq">
           FAQ
-        </Link>
-        <Link style={{ paddingRight: 12 }} to="/about">
+        </NavLink>
+        <NavLink className="nav-link" to="/about">
           About
-        </Link>
+        </NavLink>
       </div>
       <Switch>
         <Route exact path="/">

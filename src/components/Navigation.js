@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Link,
+  NavLink,
   Switch,
   Route,
   BrowserRouter as Router,
@@ -42,21 +42,21 @@ export default function Navigation() {
 function Navbar({ pages }) {
   return (
     <React.Fragment>
-      <Link style={{ paddingRight: 12 }} to="/">
+      <NavLink style={{ paddingRight: 12 }} to="/">
         Home
-      </Link>
-      <Link style={{ paddingRight: 12 }} to="/search">
+      </NavLink>
+      <NavLink style={{ paddingRight: 12 }} to="/search">
         Search
-      </Link>
-      <Link style={{ paddingRight: 12 }} to="/add">
+      </NavLink>
+      <NavLink style={{ paddingRight: 12 }} to="/add">
         Add Product
-      </Link>
-      <Link style={{ paddingRight: 12 }} to="/faq">
+      </NavLink>
+      <NavLink style={{ paddingRight: 12 }} to="/faq">
         FAQ
-      </Link>
-      <Link style={{ paddingRight: 12 }} to="/about">
+      </NavLink>
+      <NavLink style={{ paddingRight: 12 }} to="/about">
         About
-      </Link>
+      </NavLink>
     </React.Fragment>
   );
 }

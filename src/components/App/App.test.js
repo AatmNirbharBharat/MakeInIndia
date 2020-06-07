@@ -1,19 +1,19 @@
 import React from "react";
 import App from "./index";
-import { Router } from "react-router-dom";
+import { Router, MemoryRouter } from "react-router-dom";
 import { render, fireEvent } from "@testing-library/react";
 import { createMemoryHistory } from "history";
 
 test("full app rendering/navigation", () => {
-  const history = createMemoryHistory();
-  const { container, getByText } = render(
-    <Router history={history}>
-      <App />
-    </Router>
-  );
+  const { container, getByText, getAllByText } = render(<App />, {
+    wrapper: MemoryRouter,
+  });
+
+  expect(getAllByText(/home/i)[0].className).toMatch(/active/);
   expect(container.innerHTML).toMatch(/Aatm Nirbhar Bharat/);
 
   fireEvent.click(getByText(/search/i));
+  expect(getAllByText(/search/i)[0].className).toMatch(/active/);
   expect(container.innerHTML).toMatch(/search code goes here/i);
 
   fireEvent.click(getByText(/add/i));

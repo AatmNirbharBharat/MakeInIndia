@@ -37,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+
+.active {
+  color: green;
+  background: yellow;
+}
+
+.nav-link {
+  padding-right: 12px;
+}

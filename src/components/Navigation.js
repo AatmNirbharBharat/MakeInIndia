@@ -21,42 +21,31 @@ export default function Navigation() {
     { pageLink: "/about", displayName: "About", view: About },
   ];
   return (
-    <div style={{ display: "flex", flexDirection: "row" }}>
-      <Router>
-        <Route render={({ location }) => <Navbar pages={pages} />} />
-        <Switch>
-          {pages.map((page, index) => (
-            <Route
-              exact
-              path={page.pageLink}
-              render={({ match }) => <page.view key={index} />}
-            />
-          ))}
-          <Redirect to="/" />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Route render={({ location }) => <Navbar pages={pages} />} />
+      <Switch>
+        {pages.map((page, index) => (
+          <Route
+            key={index}
+            exact
+            path={page.pageLink}
+            render={({ match }) => <page.view />}
+          />
+        ))}
+        <Redirect to="/" />
+      </Switch>
+    </Router>
   );
 }
 
 function Navbar({ pages }) {
   return (
     <React.Fragment>
-      <NavLink style={{ paddingRight: 12 }} to="/">
-        Home
-      </NavLink>
-      <NavLink style={{ paddingRight: 12 }} to="/search">
-        Search
-      </NavLink>
-      <NavLink style={{ paddingRight: 12 }} to="/add">
-        Add Product
-      </NavLink>
-      <NavLink style={{ paddingRight: 12 }} to="/faq">
-        FAQ
-      </NavLink>
-      <NavLink style={{ paddingRight: 12 }} to="/about">
-        About
-      </NavLink>
+      {pages.map((page, index) => (
+        <NavLink className="nav-link" key={index} exact to={page.pageLink}>
+          {page.displayName}
+        </NavLink>
+      ))}
     </React.Fragment>
   );
 }

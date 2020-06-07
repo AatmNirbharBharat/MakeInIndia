@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.active {
+  color: green;
+  background: yellow;
+}
+
+.nav-link {
+  padding-right: 12px;
 }
